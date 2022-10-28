@@ -1,5 +1,7 @@
 # DHL Barcode Generator
 
+Website: https://pratt.de/dhl-barcode
+
 Bei diesem Projekt handelt es sich um eine kleine Lebenserleichterung.
 
 Die neuen DHL-Karten haben keinen Barcode mehr aufgedruckt, weshalb man an Packstationen nun immer die Postnummer über den Touchscreen eingeben muss. Die Karte ist also eigentlich völlig nutzlos geworden.
