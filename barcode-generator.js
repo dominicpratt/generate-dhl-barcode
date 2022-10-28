@@ -1,6 +1,6 @@
-var postnummer	= 0;
-var barcodenummer = 0;
-var barcode		= 0;
+var postnummer		= 0;
+var barcodenummer 	= 0;
+var barcode			= 0;
 var luhnbarcode 	= 0;
 	
 function berechnen() { 
@@ -26,7 +26,7 @@ function berechnen() {
 	barcodenummer = postnummer *= 631;
 	pruefziffer = luhn_calculate(barcodenummer); 
 	barcode = "3000" + barcodenummer + pruefziffer;
-	barcodenr.value = barcode;
+
 	JsBarcode("#dhl-barcode", barcode);
 	}
 
