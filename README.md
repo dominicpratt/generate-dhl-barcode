@@ -20,3 +20,14 @@ Die Berechnung der Nummer für den Barcode läuft folgendermaßen ab:
 2. [Luhn-Prüfziffer](https://de.wikipedia.org/wiki/Luhn-Algorithmus) der in Schritt 1 berechneten Zahl berechnen
 3. zusammensetzen der Nummer: "3000" + Ergebnis aus Schritt 1 + Luhn-Prüfziffer
 4. aus dieser Zahlenkombination muss ein ITF-Barcode erzeugt werden
+
+## Danksagung
+
+Danke an folgende Projekte, deren Code eingebunden ist:
+
+- [JsBarcode](https://github.com/lindell/JsBarcode)
+- [SimplyCalc](https://simplycalc.com/luhn-source.php#:~:text=The%20Luhn%20algorithm%2C%20a%20simple,is%20in%20the%20public%20domain.) für den Luhn-Algorithmus
+
+## Mitarbeit
+
+Das hier ist mein allererstes Javascript-Projekt und ich bin wirklich kein Programmierer - demnach freue ich mich über alle Anmerkungen, Kommentare, Kritik, ... :)
