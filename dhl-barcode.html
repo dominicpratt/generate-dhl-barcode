@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<TITLE>DHL-Barcode berechnen</TITLE>
+<script src="JsBarcode.itf.min.js"></script>
+<script src="barcode-generator.js"></script>
+</HEAD>
+
+<BODY>
+<H2>DHL-Barcode berechnen</H2>
+<HR>
+<P>
+<FORM NAME="formular">  
+Postnummer (8-stellig): 
+<!-- 1. Element: Eingabefeld Postnummer -->
+<INPUT TYPE="text" NAME="postnr" VALUE="" SIZE="8";>  
+<!-- 2. Element: Berechnungsbutton -->
+<INPUT TYPE="button" VALUE="Berechne!" onClick="berechnen();">  
+<P>
+Barcode (Text): 
+<!-- 3. Element: Ausgabefeld brutto fuer Barcode im Reintext -->
+<INPUT TYPE="text" NAME="barcodenr" VALUE="0" SIZE=16 READONLY onChange="ruecksetzen();">  
+</FORM> 
+<svg id="dhl-barcode"></svg>
+<P>
+<HR>
+</BODY>
+</HTML>
