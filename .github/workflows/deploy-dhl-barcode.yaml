@@ -1,0 +1,24 @@
+name: Deploy DHL Barcode
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛒 Checkout
+        uses: actions/checkout@main
+        with:
+          submodules: true          
+      
+      - name: 🔑 Install SSH Key
+        run: |
+          install -m 600 -D /dev/null ~/.ssh/id_rsa
+          echo "${{ secrets.VPS_DEPLOY_KEY }}" > ~/.ssh/id_rsa
+          echo "${{ secrets.KNOWN_HOSTS }}" > ~/.ssh/known_hosts          
+      
+      - name: 🚀 Deploy
+        run: rsync --archive --delete --stats -e 'ssh' . ${{ secrets.REMOTE_DEST }}
