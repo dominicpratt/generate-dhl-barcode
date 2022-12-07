@@ -1,6 +1,6 @@
 # DHL Barcode Generator
 
-Website: https://pratt.de/dhl-barcode/
+Website: https://pratt.de/generator-fuer-dhl-packstation-barcodes/
 
 Bei diesem Projekt handelt es sich um eine kleine Lebenserleichterung.
 
