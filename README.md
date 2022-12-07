@@ -10,8 +10,6 @@ Die Packstationen (auch die neuen) haben natürlich aber weiterhin einen Barcode
 
 Leider akzeptieren die Packstationen nur einen unnötig kompliziert berechneten Wert als Barcode, nicht direkt die Postnummer. 
 
-Es werden keine Daten auf meinem Server gespeichert, die Berechnung läuft komplett im Browser. Solltet ihr dennoch Bedenken haben, steht es euch selbstverständlich frei, den Generator selbst zu hosten.
-
 ## Voraussetzungen
 
 - die vorhandene Postnummer muss 8-stellig sein (die Postnummer findet ihr übrigens auch im DHL-Account)
