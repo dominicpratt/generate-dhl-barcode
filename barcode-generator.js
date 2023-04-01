@@ -16,8 +16,8 @@ function berechnen() {
 		return false;
 	}
 	
-	if (postnummer.toString().split('').length != 8){
-		alert("Postnummer muss genau 8 Ziffern haben!");
+	if (postnummer.toString().split('').length != 8 && postnummer.toString().split('').length != 9){
+		alert("Postnummer muss genau 8 oder 9 Ziffern haben!");
 		document.Entry.number.focus();
 		document.getElementById('number').style.color="red";
 		result = false;
@@ -25,7 +25,7 @@ function berechnen() {
   
 	barcodenummer = postnummer *= 631;
 	pruefziffer = luhn_calculate(barcodenummer); 
-	barcode = "3000" + barcodenummer + pruefziffer;
+	barcode = 3000000000000000 + barcodenummer * 10 + pruefziffer;
 
 	JsBarcode("#dhl-barcode", barcode);
 	}
